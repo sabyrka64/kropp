@@ -16,13 +16,13 @@
   display: flex;
   align-items: end;
   font-weight: 700;
-  font-size: 30px;
+  font-size: clamp(16px, 1.56vw, 30px);
   line-height: 1.37;
 }
 
 .banner-info::before {
   content: '';
-  width: 194px;
+  width: min(10.1vw, 194px);
   aspect-ratio: 1;
   margin-right: 30px;
   background: url('../../assets/icons/arrows/bold-arrow-down-right.svg')
@@ -30,7 +30,7 @@
 }
 
 .banner-title {
-  font-size: 360px;
+  font-size: clamp(60px, 18.75vw, 360px);
   line-height: 1;
 }
 
@@ -67,4 +67,21 @@
 
 .banner-pagination-button:not(.is-current):hover::after {
   border-color: var(--color-light-gray);
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    row-gap: 10px;
+    padding-inline: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-info {
+    margin-bottom: 5px;
+  }
+
+  .banner-info::before {
+    margin-right: 10px;
+  }
 }
