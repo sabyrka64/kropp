@@ -1,5 +1,5 @@
-.motivation-item:nth-child(even) {
-  background-color: var(--color-dark-alt);
+.motivation-item:nth-child(odd) {
+  background-color: var(--color-dark);
 }
 
 .motivation-item:nth-child(even) .motivation-card {

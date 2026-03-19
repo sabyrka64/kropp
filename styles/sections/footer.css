@@ -4,6 +4,7 @@
 
 .footer-main {
   padding-block: 140px 160px;
+  background-color: var(--color-dark);
 }
 
 .footer-header,
@@ -101,7 +102,6 @@
 
 .footer-extra {
   padding-block: 15px;
-  background-color: var(--color-dark-alt);
 }
 
 .footer-copyright {
